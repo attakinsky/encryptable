@@ -4,7 +4,7 @@ namespace Attakinsky\Ecryptable;
 
 use Illuminate\Support\Facades\Crypt;
 
-trait Ecryptable
+trait Encryptable
 {
 
     public function getAttribute($key)
