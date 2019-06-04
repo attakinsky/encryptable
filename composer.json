@@ -2,8 +2,8 @@
     "name": "attakinsky/encryptable",
     "type": "library",
     "description": "It is a simple trait that allows you to encrypt and decrypt on the fly multiple fields in your Eloquent models.",
-    "require-dev": {},
     "keywords": [
+        "laravel",
         "eloquent",
         "model",
         "encryption"
@@ -19,18 +19,6 @@
     "autoload": {
         "psr-4": {
             "Attakinsky\\Encryptable\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Attakinsky\\Encryptable\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Attakinsky\\Encryptable\\EncryptableServiceProvider"
-            ]
         }
     }
 }
