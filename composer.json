@@ -1,7 +1,14 @@
 {
     "name": "attakinsky/encryptable",
+    "type": "library",
     "description": "It is a simple trait that allows you to encrypt and decrypt on the fly multiple fields in your Eloquent models.",
     "require-dev": {},
+    "keywords": [
+        "eloquent",
+        "model",
+        "encryption"
+    ],
+    "minimum-stability": "dev",
     "license": "MIT",
     "authors": [{
         "name": "Attakinsky",
