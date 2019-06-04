@@ -1,6 +1,6 @@
 <?php
 
-namespace Attakinsky\Ecryptable;
+namespace Attakinsky\Encryptable;
 
 use Illuminate\Support\Facades\Crypt;
 
