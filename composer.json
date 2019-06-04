@@ -1,0 +1,18 @@
+{
+    "name": "attakinsky/encryptable",
+    "description": "It is a simple trait that allows you to encrypt and decrypt on the fly multiple fields in your Eloquent models.",
+    "require-dev": {},
+    "license": "MIT",
+    "authors": [{
+        "name": "Attakinsky",
+        "email": "attakinsky@gmail.com"
+    }],
+    "require": {
+        "illuminate/encryption": "~5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Attakinsky\\Encryptable\\": "src/"
+        }
+    }
+}
