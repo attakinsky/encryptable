@@ -20,5 +20,17 @@
         "psr-4": {
             "Attakinsky\\Encryptable\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Attakinsky\\Encryptable\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Attakinsky\\Encryptable\\EncryptableServiceProvider"
+            ]
+        }
     }
 }
