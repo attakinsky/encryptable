@@ -2,7 +2,7 @@
 
 It is a simple trait that allows you to encrypt and decrypt on the fly multiple fields in your Eloquent models.
 
-And no, it's not just another encryption package for Eloquent. This is designed to solve what others can not do: decrypt the answers by API, especially in Lumen.
+This is designed to solve what others can not do: decrypt the answers by API, especially in Lumen. It's not just another encryption package for Eloquent. 
 
 ## Install on Laravel/Lumen 5.5+
 
@@ -75,7 +75,7 @@ Create an user:
 
 ### Decrypt accessor
 
-Name and email fields are encrypted. You can verify in MySQL witn any tool like console, PHPMyAdmin or Adminer or something.
+Name and email fields are encrypted. You can verify in MySQL with any tool like console, PHPMyAdmin, Adminer or something.
 
 ```
 >>> $x = User::all();
@@ -125,3 +125,9 @@ However, if you need a response with raw data, this would not be decrypted by th
 >>> $x->toJson();
 => "{"id":1,"name":"John Doe","email":"johndoe_encrypted@gmail.com","email_verified_at":null,"created_at":"2019-06-04 21:28:39","updated_at":"2019-06-04 21:28:39"}"
 ```
+
+## &#x26a0; Caution!
+
+Encryption is 100% dependent on your `APP_KEY` in the .env file. Therefore, your `APP_KEY` should not change. If that happens, your information can not be decrypted.
+
+Please, always keep in mind that the key that encrypts a data is the only one that can decrypt it.
